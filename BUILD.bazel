@@ -37,7 +37,7 @@ cc_library(
     ]),
     copts = ["-w"] + select({
         "@platforms//os:windows": [""],
-        "//conditions:default": ["-mwaitpkg"],
+        "//conditions:default": [""],
     }),
     defines =
         select({
